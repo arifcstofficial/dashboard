@@ -1,0 +1,153 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.allClassParent{
+    display: flex;
+  
+}
+
+.navigationbar{
+    background-color: #0d2c47;
+    width:20%;
+    padding:20px;
+    height:100vh;
+    color:white;
+}
+
+.navigationbar ul{
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.navigationbar ul li{
+    font-size: 20px;
+    list-style: none;
+    padding: 10px;
+
+}
+
+.navigationbar ul li a{
+    text-decoration: none;
+    color:white;
+   
+    padding:2px 46px 2px 10px;
+}
+
+.navigationbar ul li a:hover{
+   color:yellow;
+   background-color: #5f98c6;
+}
+
+.navParagraph{
+    margin:20px 0px;
+    color:blanchedalmond;
+}
+
+/* Navigation design done */
+
+.mainboard{
+    width:80%;
+    padding: 10px 40px;
+   
+
+}
+
+.header{
+    display: flex;
+    justify-content:space-between;
+   
+}
+
+.input-header input{
+    padding:5px 70px 5px 10px;
+    border-color: aliceblue;
+    border:2px solid skyblue;
+}
+.profile-header{
+    background:#91989d;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.welcome{
+    margin:30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.name-welcome{
+    font-size:large;
+}
+.progress-welcome button{
+    padding:8px 20px ;
+    font-size:15px;
+    background-color: green;
+    color:white;
+    border-radius: 8px;
+}
+
+.statistics{
+  margin: 50px 0px;
+  display:flex;
+  gap:10px;
+  
+  
+}
+
+.card1-statistics ,.card2-statistics ,.card3-statistics,.card4-statistics{
+   background-color: #e8eef1;
+   font-size: large;
+   border-radius: 4px;
+   padding: 25px;
+   width: 25%;
+}
+
+.parent-schedule-activities{
+    display: flex;
+    margin:30px 0px 0px;
+    
+}
+
+.schedule{
+    width: 50%;
+}
+.header-schedule{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 25px 30px 5px;
+}
+
+.header-schedule p{
+    font-weight: bold;
+    font-size: large;
+}
+.header-schedule p a{
+    text-decoration: none;
+    color:green;
+}
+
+.activities{
+    width:50%;
+    
+}
+
+.header-activities{   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 25px 30px 5px;
+}
+
+.header-activities p{
+   font-weight: bold;
+    font-size: large;
+}
+
+.header-activities p a{
+    text-decoration: none;
+    color:green;
+}
+
