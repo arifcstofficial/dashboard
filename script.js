@@ -187,15 +187,12 @@ const todayDate=new Date();
 const months=[`January`,`February`,`March`,`April`,`May`,`June`,`July`,`August`,`September`,`October`,`November`,`December`];
 const days=['Sunday',`Monday`,`Tuesday`,`Wednesday`,`Thursday`,`Friday`,`Saturday`];
 const currentDate=document.querySelector(".current-date");
-
 currentDate.textContent=`${todayDate.getDate()} ${months[todayDate.getMonth()]} ${todayDate.getFullYear()}, ${days[todayDate.getDay()]}`
-
 const routines=[sundayRoutine,mondayRoutine,tuesdayRoutine,wednesdayRoutine,thursdayRoutine,[],[]];
-
 const today=todayDate.getDay();
 
 
-if(today===(5||6))
+if(today===5||today===6)
 {
     document.querySelector(".classes-schedule").innerHTML="<p><b>No class Today<b></p>";
 }
@@ -213,7 +210,6 @@ const routineElements=todayclasses.map(element=>
         </div>
     `
 });
-
 
 const showRoutine=document.querySelector(".classes-schedule");
 showRoutine.innerHTML=routineElements.join(" ");

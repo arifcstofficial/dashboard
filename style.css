@@ -2,12 +2,11 @@
     margin:0px;
     padding:0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 .allClassParent{
-    display: flex;
-  
-  
+    display: flex; 
 }
 
 .navigationbar{
@@ -15,37 +14,55 @@
     width:20%;
     padding:20px;
     color:white;
+    min-height:100vh;
 }
 
 .navigationbar ul{
-    padding: 20px;
-    border-radius: 3px;
+    list-style: none;
 }
 
 .navigationbar ul li{
-    font-size: 20px;
-    list-style: none;
-    padding: 10px;
-
+    margin-bottom: 6px;
 }
 
 .navigationbar ul li a{
-    text-decoration: none;
+   text-decoration:none;
+   color:#c8d6e5;
+   display: block;
+   padding: 12px 14px;
+   border-radius: 8px;
+   transition: all 0.2s ease;
+}
+
+.navigation ul li a.active{
+    background-color: #1d5d8f;
     color:white;
-   
-    padding:2px 46px 2px 10px;
+    font-weight: bold;
+
 }
 
 .navigationbar ul li a:hover{
-   color:yellow;
-   background-color: #5f98c6;
+   color: #16466b;
+   background-color: white;
+   transform: translateX(4px);
+   transition:all .2s ease;
 }
 
 .navParagraph{
-    margin:20px 0px;
+    padding:10px 12px 30px;
+    border-bottom:1px solid rgba(255,255,255,0.15);
     color:blanchedalmond;
+    margin-bottom: 20px;
 }
 
+.navParagraph h1{
+    font-size:25px;
+    margin-bottom:5px;
+}
+.navParagraph p{
+    font-size:12px;
+    color: #9fb3c8;
+}
 /* Navigation design done */
 
 .mainboard{
@@ -55,28 +72,69 @@
 
 .header{
     display: flex;
+    align-items: center;
     justify-content:space-between;
-   
+    margin-bottom:30px;  
 }
 
 .input-header input{
-    padding:5px 70px 5px 10px;
-    border-color: aliceblue;
-    border:2px solid skyblue;
+    width:350px;
+    padding: 12px 18px;
+    border: 1px solid #d5dde5;
+    border-radius: 10px; 
+    background-color: white;
+    font-size: 14px;
+    outline:none;
+    transition:.2s;
 }
-.profile-header{
-    background:#91989d;
-    padding: 10px;
-    border-radius: 20px;
+.input-header input:focus{
+    border-color: #1d6fa5;
+    box-shadow: 0 0 0 3px rgba(29, 111, 165, 0.1);
 }
 
+.input-header input::placeholder{
+    color: #144270;
+}
+.profile-header{
+    background:white;
+    border: 1px solid #264660;
+    padding: 8px 16px;
+    border-radius: 12px;
+    min-width: 130px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); 
+}
+
+.profile-header p:first-child{
+    font-weight: bold;
+    color: #17324d;
+}
+.profile-header p:last-child{
+    font-size: 12px;
+    color: #7b8794;
+    margin: 3px;
+}
 .welcome{
-    margin:30px 0px;
-    display: flex;
-    justify-content: space-between;
+   display:flex;
+   align-items:center;
+   justify-content: space-between;
+   margin:20px 0px 30px;
+   padding: 30px;
+   background: linear-gradient(135deg, #0d2c47, #1d5d8f);
+   border-radius: 15px;
+   color: white;
+   box-shadow: 0px 8px 20px rgba(13,44,71,0.15);
 }
 .name-welcome{
     font-size:large;
+}
+
+.name-welcome h1{
+    font-size: 28px;
+}
+
+.name-welcome p{
+     color: #d5e5f2;
+    font-size: 14px;
 }
 .progress-welcome button{
     padding:8px 20px ;
@@ -105,6 +163,7 @@
 .schedule{
     background-color: #f3f4f5;
     padding:30px 25px 5px 25px;
+    border-radius: 12px;
     
 }
 .header-schedule{
